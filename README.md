@@ -2,6 +2,8 @@
 
 React project that uses the [Breaking Bad API](https://breakingbadapi.com/documentation) to show and filter characters from the show.
 
+[Tutorial](https://www.youtube.com/watch?v=YaioUnMw0mo) made by [Brad Traversy](https://github.com/bradtraversy).
+
 ## Usage
 
 ```
