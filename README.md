@@ -20,3 +20,6 @@ npm start
 # Build app
 npm run build
 ```
+## What's different?
+
+* Season appearances instead of Staus to avoid spoilers
