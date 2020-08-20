@@ -20,7 +20,7 @@ const CharacterItem = ({ item }) => {
               <strong>Birthday:</strong> {item.birthday}
             </li>
             <li>
-              <strong>Seasons:</strong> {item.appearance}
+              <strong>Seasons:</strong> {item.appearance.join(', ')}
             </li>
           </ul>
         </div>
