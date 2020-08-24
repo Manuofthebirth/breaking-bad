@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import bcslogo from '../../img/bcs-logo.svg.png'
 
 // const Search = () => {
 const Search = ({ getQuery }) => {

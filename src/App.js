@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import axios from 'axios';
+import Saul from './components/pages/Saul';
 import Header from './components/ui/Header';
 import CharacterGrid from './components/characters/CharacterGrid';
 import Search from './components/ui/Search';
@@ -26,13 +28,20 @@ const App = () => {
   }, [query])
 
   return (
-    <div className='container'>
-      <Header />
-      {/* <Search /> */}
-      <Search getQuery={(q) => setQuery(q)} />
-      {/* pass CharacterGrid as props */}
-      <CharacterGrid isLoading={isLoading} items={items} />
-    </div>
+    <Router>
+      <div className='container'>
+        <Route exact path="/" render={ props => (
+          <React.Fragment>
+            <Header />
+          </React.Fragment>
+        )} />
+        <Route path="/saul" component={Saul} />
+        {/* <Search /> */}
+        <Search getQuery={(q) => setQuery(q)} />
+        {/* pass CharacterGrid as props */}
+        <CharacterGrid isLoading={isLoading} items={items} />
+      </div>
+    </Router> 
   );
 }
 
