@@ -37,14 +37,22 @@ header {
   height: 200px;
 }
 
-header img {
+.logo {
+  margin: 10px 0;
   width: 200px;
 }
 
+.sm-logo {
+  width: 100px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
 .center {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .search {
