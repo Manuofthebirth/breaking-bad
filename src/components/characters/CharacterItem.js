@@ -6,9 +6,12 @@ const CharacterItem = ({ item }) => {
       <div className='card-inner'>
         <div className='card-front'>
           <img src={item.img} alt='' />
+          <figcaption>
+            <h1 className="name-front">{item.name}</h1>
+          </figcaption>  
         </div>
         <div className='card-back'>
-          <h1>{item.name}</h1>
+          <h1 className="name-back">{item.name}</h1>
           <ul>
             <li>
               <strong>Actor Name:</strong> {item.portrayed}
